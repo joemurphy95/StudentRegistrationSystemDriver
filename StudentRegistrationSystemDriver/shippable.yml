@@ -1,0 +1,8 @@
+language: java
+jdk: 
+    jdk1.8.0
+after_success:
+    mvn clean install
+    java -jar /root/src/github.com/joemurphy95/SystemRegistrationSystem/target/SystemRegistrationSystem-1.0-SNAPSHOT-jar-with-dependencies.jar
+recipients:
+- j.murphy59@nuigalway.ie
